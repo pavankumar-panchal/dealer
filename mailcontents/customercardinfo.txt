@@ -1,0 +1,33 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE##
+ 
+Customer ID: ##CUSTOMERID##
+ 
+                                                                                                      Sub: Free PIN No for ##NEWPRODUCTNAME## (2010-11)
+																									       Please print and preserve this email for future reference
+
+Dear ##NAME##,
+ 
+We are happy to have you registered for ##OLDPRODUCTNAME##. A registration has been generated for your system with following information.
+ 
+ 
+2010-11 PIN Number information
+ 
+Product Name: ##NEWPRODUCTNAME##
+PIN No: ##SCRATCHCARDNO##
+(Serial No: ##CARDID##)
+Customer Name: ##COMPANY##
+Representative: ##DEALERNAME##
+ 
+  
+In case of any queries, please feel free to contact us at support@relyonsoft.com.
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                                                                             This email is a system generated message. Please do not reply to this message(DM).

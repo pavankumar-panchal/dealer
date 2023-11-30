@@ -1,0 +1,20 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE##
+  
+                                                                              
+Dear ##NAME##,
+   
+You have successfully made the payment of Rs. ##PAYMENTAMOUNT## for Saralimax Credit to Relyon Accounts Department. 
+
+In case of any support required, please call us or email us.
+ 
+  
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                                                                             This email is a system generated message. Please do not reply to this message(DM).

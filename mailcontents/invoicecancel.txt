@@ -1,0 +1,23 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANYNAME##
+Customer ID: ##CUSTOMERID##
+##PLACE##
+  
+                                                                  Sub: ##SUBJECT##
+  
+Dear ##CONTACTPERSON##,
+   
+The above said invoice number has been cancelled in our system, and will no longer be eligible. Kindly find the copy of cancelled invoice attached (which also contains the reason for cancellation). 
+ 
+In case of any clarifications needed, please revert back. Assuring you the best of our services
+ 
+  
+  
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                                        This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

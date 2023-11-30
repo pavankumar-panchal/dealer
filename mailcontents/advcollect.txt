@@ -1,0 +1,20 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE## 
+  
+                					Sub: Advance Payment Information (Beta)
+				                                                              
+Dear ##NAME##,
+   
+An advance amount of Rs, ##AMOUNT##/- has been received towards the implementation of Saral PayPack software.
+
+We thank you for your ongoing cooperation. To track your implementation status, visit www.relyonsoft.com -> Customer Login Area.
+
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                           This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

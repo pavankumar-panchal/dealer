@@ -1,0 +1,24 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE##
+  
+Customer ID: ##CUSTOMERID##
+  
+                                                                              
+Dear ##NAME##,
+   
+You have successfully made the payment of Rs. ##AMOUNT## to Relyon Accounts Department against Invoice No: ##INVOICENO##. 
+
+
+
+In case of any support required, please call us or email us.
+ 
+  
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+   						This email is a system generated message. Please do not reply to this message(DM).

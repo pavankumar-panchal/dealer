@@ -1,0 +1,34 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE##
+ 
+Customer ID: ##CUSTOMERID##
+ 
+                                                                                                      Sub: You have been issued with a PIN Number for ##PRODUCTNAME## registration.
+																									      
+Dear ##NAME##,
+ 
+You have been issued with a PIN Number for ##PRODUCTNAME## on ##DATE##.
+ 
+The information is as below:
+ 
+ 
+2010-11 PIN Number information
+ 
+Product Name: ##PRODUCTNAME##
+PIN Number: ##SCRATCHCARDNO##
+(Serial No: ##CARDID##)
+Customer Name: ##COMPANY##
+Representative: ##DEALERNAME##
+ 
+  
+You can use the same for registering ##PRODUCTNAME##. Our representative may also get in touch with you for any assistance during registration. In case of any queries, please feel free to contact us at support@relyonsoft.com.
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                                                                             This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

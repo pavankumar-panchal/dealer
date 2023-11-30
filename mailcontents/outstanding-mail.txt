@@ -1,0 +1,42 @@
+Date: ##TODAYDATE##
+
+To,
+##COMPANYNAME##
+Customer ID: ##CUSTOMERID##
+##PLACE##
+
+									Sub : Amount outstanding against Invoice No : ##INVOICENO##
+
+Dear ##CONTACTPERSON##,
+
+We thank you for choosing Relyon Products as your preferred brand. This is to bring to your kind notice that your payment is is due against Invoice No: ##INVOICENO##
+	
+Details of Invoice:
+
+Invoice Name: ##COMPANYNAME##
+Date: ##DATE##
+Invoice No: ##INVOICENO##
+Total Amount: ##TOTALAMOUNT##
+Amount Received : ##AMOUNTRECIEVED## 
+Outstanding Amount : ##OUTSTANDINGAMOUNT## 
+		
+Kindly arrange to make the payment as soon as possible.
+	
+Payment Modes:
+Payment should be made only by any of below modes
+
+1. Cheque or Demand Draft in favour of Relyon Softech Ltd.
+2. Online Transfer to Relyon Bank Account.
+3. Credit/Debit card transacted at www.relyonsoft.com (Customer Login)
+	
+Cash payments:
+Note that, CASH payments are not acceptable. In case, you have made cash payment, you should be receiving a RECEIPT from Relyon (through email/hardcopy) within 2 working days. If not, Please intimate us. 
+
+NOTE :In case you have already made the payment, please provide us the details, so that we can update our records.
+
+Regards,
+
+Relyon Softech Ltd | Bangalore 
+
+								This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).
+

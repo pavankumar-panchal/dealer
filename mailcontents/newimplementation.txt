@@ -1,0 +1,49 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE##
+ 
+ 
+                                   			 Sub: Implementation Request (Beta)
+
+Dear ##NAME##,
+ 
+ 
+An Implementation Request, for the Invoice Number ##INVOICENO## has been executed for you in our system with below details. 
+
+Impementation details:
+As per our records, the Implementation Information of your business are as under. In case of any changes, kindly intimate to support@relyonsoft.com.
+ 
+
+Current Status: 
+##STATUS##
+Remarks : ##STATUSREMARKS##
+
+
+Additional Information:
+Invoice No: ##INVOICENO##
+PO No/Date : ##PODATE##
+No of Companies to be processed : ##NOCOMPANY##
+No of Months to be processed : ##NOMONTH##
+Processing from month : ##PROMONTH##
+Commitment of Start date : ##STARTDATE##
+ 
+Customization Information :
+Status : ##CUSTSTATUS##
+Remarks : ##CUSTSTATUS##
+Delivered files:
+##CUSTTABLE##
+
+Add-on Module:
+##ADDONTABLE##
+
+
+In case of any queries, please feel free to contact us at support@relyonsoft.com.
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+
+
+                                                                            This email is a system generated message(EMAILID). Please do not reply to this message(DM).

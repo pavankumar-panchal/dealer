@@ -1,0 +1,62 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE##
+ 
+ 
+                                                                                                           Sub: Welcome to world of Relyon Customers
+
+Dear ##NAME##,
+ 
+ 
+Welcome to the prestigious group of Relyon customers. We are proud to serve you for your software automation needs. At a huge customer base of thousands, every customer is special to us and it would be our pleasure to treat you at your satisfactory best.
+ 
+Customer ID:
+For the purpose of accessing multiple information and easy reference, you have been assigned with a unique Identification number. This would also be referred as customer ID and will be same for all the Relyon products and services. Addition to this, every product will have its own PIN number and service would be referred through a contract number.
+Customer ID: ##CUSID##
+ 
+Customer Login Area: 
+We are also proud to present you the login credentials for Relyon Customer Login area. Your username will be Customer ID. The login details are:
+
+Username: ##CUSID##
+Password: ##PASSWORD## 
+Website: www.imax.relyonsoft.net/customer
+
+ 
+Availing Support:
+Relyon ensures satisfied customer. Relyon Support Department functions on general working hours, 6 days a week (subject to change with prior notice). Customers can avail the support on below procedure:
+1. Level 1: Contact Relyon Support department by emailing to support@relyonsoft.com. The queries would be addressed by 2 working hours. This service is totally free for registered users of such product. Customer has to quote valid Customer ID belonging to him for such correspondences.
+2. Level 2: If you do not receive the reply to the email requests, you can also place a call on your local support number 1860-425-5570. Please quote your customer ID and earlier interactions made, if any.
+3. Level 3: If you need any extra assistance to resolve the issue, we would be using extra level of supporting system in below hierarchy.
+a. Remote access: In case if your system is connected to internet, our support officer would request a connection to your system over the internet. This will have an authentication level from your end and will be passed through a secure connection. Over such access, the issue would be clarified / resolved.
+b.  Onsite Visits: Relyon support engineer can also make an onsite visit, in case any of other option remains failed. Note that, such visits may be on a chargeable basis. Onsite visit requests has to be raised at www.relyonsoft.com. 
+  
+Your contact Information:
+As per our records, the contact details of your business are as under. In case of any changes, kindly intimate to info@relyonsoft.com.
+ 
+Contact Information
+Business name: ##COMPANY##
+Contact Person: ##NAME##
+Address: ##ADDRESS##
+Place: ##PLACE##
+District: ##DISTRICT##
+State: ##STATE##
+Pincode: ##PINCODE##
+STD Code: ##STDCODE##
+Phone: ##PHONE##
+Cell: ##CELL##
+Email: ##EMAIL##
+ 
+Type: ##TYPE##
+Category: ##CATEGORY##
+ 
+ 
+In case of any queries, please feel free to contact us at support@relyonsoft.com.
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+
+
+                                                                            This email is a system generated message((##EMAILID##)). Please do not reply to this message(DM).

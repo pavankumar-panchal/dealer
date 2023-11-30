@@ -1,0 +1,20 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANYNAME##
+##PLACE##
+  
+                					Sub: Receipt No ##RECEIPTNO## (Cancelled)
+				                                                              
+Dear ##CONTACTPERSON##,
+   
+It is to inform you the cancellation of Payment Receipt no: ##RECEIPTNO## for the below reason. Thereby, respective receipt booked shall be reversed.
+
+Reason: ##REASON##
+  
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                           This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

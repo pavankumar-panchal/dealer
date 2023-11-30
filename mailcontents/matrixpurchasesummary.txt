@@ -1,0 +1,25 @@
+Date: ##DATE##
+ 
+Hi,
+ 
+                                                                                      Sub: Purchase  of Matrix Products
+																					  
+ 
+An invoice has been raised by "##CREATEDBY##" (Sales person: ##SALESPERSON##). The details are as below
+ 
+Invoice Request Summary
+ 
+Request No: ##INVOICEREQUESTNO##
+Requested Date: ##REQUESTEDDATE##
+Requested by: ##CREATEDBY##
+Customer Id: ##CUSTOMERID##
+Company Name: ##COMPANYNAME##
+Sales Person: ##SALESPERSON##
+
+  
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+
+ 
+                                                                              This email is a system generated message(##EMAILID##). Please do not reply to this message(UM).

@@ -1,0 +1,21 @@
+Date: ##DATE##
+ 
+To: 
+##BRANCHEADNAME##
+  
+                					Sub: Update in the Implementation Request for the Invoice No ##INVOICENO## (Beta)
+				                                                              
+Dear Sir,
+   
+Please find the attached Invoice for Rs. ##AMOUNT##. 
+ 
+The Implementation Request for the Invoice No (##INVOICENO##) has been Updated by the Sales Person ##SALESNAME##.
+
+In case of any support required, please contact 1860-425-5570 or write at support@relyonsoft.com. 
+
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                           This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).
