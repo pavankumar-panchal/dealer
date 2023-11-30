@@ -1,11 +1,11 @@
-<?
+<?php
 include('../inc/eventloginsert.php');
 $userid = imaxgetcookie('dealeruserid');
 ?>
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/transactionsummary.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/transactionsummary.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
 <script language="JavaScript">
 	if (navigator.platform.toString().toLowerCase().indexOf("linux") != -1)
 	{
@@ -51,11 +51,11 @@ $userid = imaxgetcookie('dealeruserid');
                                               <tr>
                                                 <td width="13%" bgcolor="#EDF4FF"><div align="left">From Date:</div></td>
                                                 <td width="37%" bgcolor="#f7faff"><div align="left">
-                                                  <input name="fromdate" type="text" class="swifttext" id="DPC_fromdate" size="30" autocomplete="off"   value="<? echo(date('d-m-Y')); ?>"/>
+                                                  <input name="fromdate" type="text" class="swifttext" id="DPC_fromdate" size="30" autocomplete="off"   value="<?php echo(date('d-m-Y')); ?>"/>
                                                 </div></td>
                                                 <td width="10%" bgcolor="#EDF4FF"><div align="left">To Date: </div></td>
                                                 <td width="40%" bgcolor="#f7faff"><div align="left">
-                                                  <input name="todate" type="text" class="swifttext" id="DPC_todate" size="30" autocomplete="off"   value="<? echo(date('d-m-Y')); ?>"/>
+                                                  <input name="todate" type="text" class="swifttext" id="DPC_todate" size="30" autocomplete="off"   value="<?php echo(date('d-m-Y')); ?>"/>
                                                 </div></td>
                                               </tr>
                                             </table></td></tr>
@@ -75,7 +75,7 @@ $userid = imaxgetcookie('dealeruserid');
                                                 <tr>
                                                   <td width="70%"><div id="form-error">&nbsp;</div></td>
                                                   <td width="30%"><div align="center">
-                                                    <input name="view"  value="View" type="submit" class="swiftchoicebutton" id="view"   onclick="formsubmit('view','<? echo($userid) ?>','');"/>
+                                                    <input name="view"  value="View" type="submit" class="swiftchoicebutton" id="view"   onclick="formsubmit('view','<?php echo($userid) ?>','');"/>
                                                     &nbsp;
                                                     <input name="excel"  value="Excel" type="submit" class="swiftchoicebutton" id="excel" onclick="formsubmit('toexcel');" />
                                                   </div></td>

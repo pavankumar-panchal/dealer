@@ -1,4 +1,4 @@
-<? 
+<?php 
 	include('../inc/eventloginsert.php');
 	$userid = imaxgetcookie('dealeruserid');
 	$query = "select * from inv_mas_dealer where slno = '".$userid."'";
@@ -14,12 +14,12 @@
 	else
 	{
 ?>
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../inc/getproductjs.php?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../inc/getschemejs.php?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/purchaseproduct.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../inc/getproductjs.php?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../inc/getschemejs.php?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/purchaseproduct.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
 <script language="JavaScript">
 	if (navigator.platform.toString().toLowerCase().indexOf("linux") != -1)
 	{
@@ -33,7 +33,7 @@
 <script>
   getinvoicedetails();
  </script> 
-<?
+<?php
 	$userid = imaxgetcookie('dealeruserid');
 ?>
 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="text-align:left">
@@ -62,12 +62,12 @@
                                           <td id="displayschemecode"><div align="left"><select name="scheme" class="swiftselect-mandatory" id="scheme" style="width:180px" >
                                                <option value="">Select A scheme</option>
                                               </select></div></td><td><div align="left">Date:</div></td><td><div align="left">
-                                                <input name="billdate" class="swifttext-mandatory" id="billdate"  value="<? echo(datetimelocal('d-m-Y'))?>" readonly="readonly"/>
+                                                <input name="billdate" class="swifttext-mandatory" id="billdate"  value="<?php echo(datetimelocal('d-m-Y'))?>" readonly="readonly"/>
                                               </div></td></tr>
                                             <tr>
                                               <td width="12%"><div align="left">Product:</div></td>
                                               <td bgcolor="#f7faff" id="displayproductcode"><div align="left">
-                                                <select name="product" class="swiftselect-mandatory" id="product" style="width:180px;" onchange="getamount( <? echo($userid); ?> );">
+                                                <select name="product" class="swiftselect-mandatory" id="product" style="width:180px;" onchange="getamount( <?php echo($userid); ?> );">
                                                   <option value="">Select A product</option>                                               </select>
                                                 
                                                 
@@ -75,7 +75,7 @@
                                               </div></td><input type="hidden" name="lastslno" id="lastslno" />
                                               <td bgcolor="#f7faff"><div align="left">Purchase Type:</div></td>
                                               <td bgcolor="#f7faff"><div align="left">
-                                                <select name="purchasetype" class="swiftselect-mandatory" id="purchasetype" style="width:180px;" onchange="getamount(<? echo($userid); ?>);">
+                                                <select name="purchasetype" class="swiftselect-mandatory" id="purchasetype" style="width:180px;" onchange="getamount(<?php echo($userid); ?>);">
                                                   <option value="">Make A Selection</option>
                                                   <option value="new">New</option>
                                                   <option value="updation">Updation</option>
@@ -85,7 +85,7 @@
                                              <tr>
                                               <td width="12%"><div align="left">Quantity:</div></td>
                                               <td width="33%" bgcolor="#f7faff"><div align="left">
-                                                <select name="quantity" class="swiftselect-mandatory" id="quantity" style="width:180px;" onchange="getamount(<? echo($userid); ?>);">
+                                                <select name="quantity" class="swiftselect-mandatory" id="quantity" style="width:180px;" onchange="getamount(<?php echo($userid); ?>);">
                                                   <option value="">Make A Selection</option>
                                                   <option value="1">1</option>
                                                   <option value="2">2</option>
@@ -102,7 +102,7 @@
                                               </div></td>
                                               <td width="12%"><div align="left">Usage:</div></td>
                                               <td width="43%" bgcolor="#f7faff"><div align="left">
-                                                <select name="usagetype" class="swiftselect-mandatory" id="usagetype" style="width:180px;" onchange="getamount(<? echo($userid); ?>);">
+                                                <select name="usagetype" class="swiftselect-mandatory" id="usagetype" style="width:180px;" onchange="getamount(<?php echo($userid); ?>);">
                                                   <option value="">Make A Selection</option>
                                                   <option value="singleuser">Single User</option>
                                                   <option value="multiuser">Multi User</option>
@@ -127,9 +127,9 @@
                                                   <td width="37%"><div align="center">
                                                     <input name="new"  value="New Product" type="submit" class="swiftchoicebutton" id="new"  onClick="newproduct();"/>
                                                     &nbsp;
-                                                    <input name="save"  value="Save Product" type="submit" class="swiftchoicebutton" id="save"  onClick="formsubmit('save',<? echo($userid); ?>);"/>
+                                                    <input name="save"  value="Save Product" type="submit" class="swiftchoicebutton" id="save"  onClick="formsubmit('save',<?php echo($userid); ?>);"/>
                                                   &nbsp;
-                                                  <input name="delete"  value="Del. Product" type="submit" class="swiftchoicebutton" id="delete"  onClick="formsubmit('delete',<? echo($userid); ?>);"/>
+                                                  <input name="delete"  value="Del. Product" type="submit" class="swiftchoicebutton" id="delete"  onClick="formsubmit('delete',<?php echo($userid); ?>);"/>
                                                   </div></td>
                                                 </tr>
                                               </table></td>
@@ -162,7 +162,7 @@
                                          <tr><td colspan="3"><div id="form-error-confirm">&nbsp;</div></td>
                                            <td><input name="newtransaction"  value="New Transaction" type="button" class="swiftchoicebuttonbig" id="newtransaction"   onclick="newentry();"/>
 &nbsp;&nbsp;
-<input name="confirm"  value="Confirm &amp; Proceed" type="submit" class="swiftchoicebuttonbig" id="confirm" onclick="checkforproducts('<? echo($userid) ?>');" />&nbsp;</td>
+<input name="confirm"  value="Confirm &amp; Proceed" type="submit" class="swiftchoicebuttonbig" id="confirm" onclick="checkforproducts('<?php echo($userid) ?>');" />&nbsp;</td>
                                          </tr>
                                         </table>
                                       </td>
@@ -231,6 +231,6 @@
     </table></td>
   </tr>
 </table>
-<?
+<?php
 }
 ?>

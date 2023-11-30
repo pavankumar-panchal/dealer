@@ -1,8 +1,8 @@
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/saralaccountscompcopy.js?dummy=<? echo (rand());?>"></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/saralaccountscompcopy.js?dummy=<?php echo (rand());?>"></script>
 <div style="left: -1000px; top: 597px;visibility: hidden; z-index:100" id="tooltip1"></div>
-<script language="javascript" src="../functions/tooltip.js?dummy=<? echo (rand());?>"></script>
+<script language="javascript" src="../functions/tooltip.js?dummy=<?php echo (rand());?>"></script>
 <table width="952" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="text-align:left">
   <tr>
     <td valign="top" style="border-right:#1f4f66 1px solid;border-bottom:#1f4f66 1px solid;" ><table width="100%" border="0" cellspacing="0" cellpadding="0" id="mainwrap">

@@ -1,4 +1,4 @@
-<? 
+<?php 
 	include('../inc/eventloginsert.php');
 	$userid = imaxgetcookie('dealeruserid');
 	$query = "select * from inv_mas_dealer where slno = '".$userid."'";
@@ -15,13 +15,13 @@
 	else
 	{
 ?>
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<link media="screen" rel="stylesheet" href="../style/colorbox-invoicing.css?dummy=<? echo (rand());?>"  />
-<script language="javascript" src="../functions/matrixinvoiceregister.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/matrixbranchheadselectjs.php?dummy=<? echo (rand());?>" ></script>
-<script language="javascript" src="../functions/matrixleftdealerselectjs.php?dummy=<? echo (rand());?>" ></script>
-<script language="javascript"  src="../functions/colorbox.js?dummy=<? echo (rand());?>" ></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<link media="screen" rel="stylesheet" href="../style/colorbox-invoicing.css?dummy=<?php echo (rand());?>"  />
+<script language="javascript" src="../functions/matrixinvoiceregister.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/matrixbranchheadselectjs.php?dummy=<?php echo (rand());?>" ></script>
+<script language="javascript" src="../functions/matrixleftdealerselectjs.php?dummy=<?php echo (rand());?>" ></script>
+<script language="javascript"  src="../functions/colorbox.js?dummy=<?php echo (rand());?>" ></script>
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
@@ -57,7 +57,7 @@
                                       <td width="50%" valign="top" style="border-right:1px solid #d1dceb;"><table width="100%" border="0" cellspacing="0" cellpadding="3">
                                           <tr bgcolor="#f7faff">
                                             <td width="22%" align="left" valign="top" bgcolor="#EDF4FF">From Date: </td>
-                                            <td width="78%" align="left" valign="top" bgcolor="#EDF4FF"><input name="fromdate" type="text" class="swifttext-mandatory" id="DPC_fromdate" size="30" autocomplete="off" value="<? echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/>
+                                            <td width="78%" align="left" valign="top" bgcolor="#EDF4FF"><input name="fromdate" type="text" class="swifttext-mandatory" id="DPC_fromdate" size="30" autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/>
                                               <input type="hidden" name="flag" id="flag" value="true" />
                                               <input type="hidden" name="onlineslno" id="onlineslno" value="" />
                                               <input type="hidden" name="hiddentotalinvoices" id="hiddentotalinvoices" value="" />
@@ -78,7 +78,7 @@
                                             <td width="22%" align="left" valign="top" bgcolor="#EDF4FF">To Date:</td>
                                             <td width="78%" align="left" valign="top" bgcolor="#EDF4FF"><label for="sto"></label>
                                               <label for="spp">
-                                                <input name="todate" type="text" class="swifttext-mandatory" id="DPC_todate" size="30" autocomplete="off" value="<? echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/>
+                                                <input name="todate" type="text" class="swifttext-mandatory" id="DPC_todate" size="30" autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/>
                                               </label></td>
                                           </tr>
                                           <tr bgcolor="#f7faff">
@@ -252,4 +252,4 @@
       </table></td>
   </tr>
 </table>
-<? }?>
+<?php }?>

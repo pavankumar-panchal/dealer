@@ -1,4 +1,4 @@
-<?
+<?php
 $userid = imaxgetcookie('dealeruserid');
 $query = "select inv_mas_dealer.businessname as dealername,inv_mas_dealer.branch as branchid,inv_mas_dealer.relyonexecutive, inv_mas_dealer.district, inv_mas_district.statecode,inv_mas_state.statename,inv_mas_dealer.enablematrixbilling as enablematrixbilling ,inv_mas_dealer.branchhead from inv_mas_dealer 
 left join inv_mas_district on inv_mas_dealer.district = inv_mas_district.districtcode
@@ -58,12 +58,12 @@ if($flag == 'true')
 {
 include("../inc/eventloginsert.php");
 ?>
-<link media="screen" rel="stylesheet" href="../style/colorbox.css?dummy=<? echo(rand());?>"  />
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/matrixreceipts.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/javascripts.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/colorbox.js?dummy=<? echo(rand());?>" ></script>
+<link media="screen" rel="stylesheet" href="../style/colorbox.css?dummy=<?php echo(rand());?>"  />
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/matrixreceipts.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/javascripts.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/colorbox.js?dummy=<?php echo(rand());?>" ></script>
 
 <table width="952" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
@@ -156,7 +156,7 @@ include("../inc/eventloginsert.php");
                                           </tr>
                                           <tr >
                                             <td valign="top">Receipt  Date:</td>
-                                            <td valign="top"><input name="receiptdate" type="text" class="swifttext" id="DPC_receiptdate" size="30" autocomplete="off" value="<? echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/></td>
+                                            <td valign="top"><input name="receiptdate" type="text" class="swifttext" id="DPC_receiptdate" size="30" autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/></td>
                                           </tr>
                                           <tr bgcolor="#EDF4FF">
                                             <td align="left" valign="top" bgcolor="#f7faff"><label>
@@ -380,5 +380,5 @@ include("../inc/eventloginsert.php");
 <script>
 gettotalcustomercount();
 </script>
-<?
+<?php
  } ?>

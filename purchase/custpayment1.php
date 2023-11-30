@@ -1,9 +1,9 @@
-<?
+<?php
 include('../inc/eventloginsert.php');
 ?>
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/custpayment.js?dummy=<? echo(rand());?>"></script>
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo(rand());?>"></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/custpayment.js?dummy=<?php echo(rand());?>"></script>
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo(rand());?>"></script>
 
 <table width="952" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="text-align:left">
   <tr>
@@ -98,17 +98,17 @@ include('../inc/eventloginsert.php');
                                       <td width="49%" valign="top"><table width="100%" height="143" border="0" cellpadding="3" cellspacing="0">
                                       <tr bgcolor="#f7faff">
                                             <td align="left" valign="top" bgcolor="#f7faff">Enter Date:</td>
-                                            <td align="left" valign="top" bgcolor="#f7faff" id="createddate"><? echo(datetimelocal('d-m-Y')." (".datetimelocal('H:i').")"); ?>
+                                            <td align="left" valign="top" bgcolor="#f7faff" id="createddate"><?php echo(datetimelocal('d-m-Y')." (".datetimelocal('H:i').")"); ?>
                                             </td>
                                           </tr>
-                                             <?
+                                             <?php
 	  $query = "Select businessname,dealerusername from inv_mas_dealer where slno = '".$userid."'";
 	  $fetch = runmysqlqueryfetch($query);
 	  $businessname =strtoupper($fetch['businessname']); 
 	   ?>
                                           <tr bgcolor="#f7faff">
                                             <td align="left" valign="top" bgcolor="#EDF4FF">Entered By:</td>
-                                            <td align="left" valign="top" bgcolor="#EDF4FF" id="displayentereddate"><? echo( $businessname)?></td>
+                                            <td align="left" valign="top" bgcolor="#EDF4FF" id="displayentereddate"><?php echo( $businessname)?></td>
                                           </tr>
                                       <tr bgcolor="#f7faff">
                                             <td align="left" valign="top" >Payment Status:</td>

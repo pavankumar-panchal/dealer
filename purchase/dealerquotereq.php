@@ -1,7 +1,7 @@
 <link href="../style/main.css" rel=stylesheet>
 <script language="javascript" src="../functions/javascript.js"></script>
 <script language="javascript" src="../functions/dealerquotereq.js"></script>
-<? $userid = imaxgetcookie('dealeruserid');?>
+<?php $userid = imaxgetcookie('dealeruserid');?>
 <table width="952" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
   <tr>
     <td width="23%" valign="top" style="border-right:#1f4f66 1px solid;border-bottom:#1f4f66 1px solid;" ><table width="100%" border="0" cellspacing="0" cellpadding="0" id="mainwrap">
@@ -211,7 +211,7 @@
                                               <td align="left" valign="top">Region:</td>
                                               <td width="35%" align="left" valign="top"><select name="region" class="swiftselect" id="region">
                                                 <option value="">ALL</option>
-                                                <? 
+                                                <?php 
 											include('../inc/region.php');
 											?>
                                               </select>                                              </td>

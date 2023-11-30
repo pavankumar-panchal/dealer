@@ -1,4 +1,4 @@
-<?
+<?php
 if(($beanchhead != 'yes') && (($userid != '1780') && ($userid != '1701') && ($userid != '1369') && ($userid != '1316') && ($userid != '1795') && ($userid != '1526') && ($userid != '1428') && ($userid != '1429') && ($userid != '1567') && ($userid != '1877') && ($userid != '1791')))
 { 
 	$pagelink = getpagelink("unauthorised"); 
@@ -57,16 +57,16 @@ if($flag == 'true')
 {
 ?>
 
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<link media="screen" rel="stylesheet" href="../style/colorbox.css?dummy=<? echo (rand());?>"  />
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/customuser.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/colorbox.js?dummy=<? echo (rand());?>" ></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<link media="screen" rel="stylesheet" href="../style/colorbox.css?dummy=<?php echo (rand());?>"  />
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/customuser.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/colorbox.js?dummy=<?php echo (rand());?>" ></script>
 
-<script language="javascript" src="../functions/enter_keyshortcut.js?dummy=<? echo (rand());?>" ></script>
-<script language="javascript" src="../functions/key_shortcut.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/customer-shortkey.js?dummy=<? echo (rand());?>"></script>
+<script language="javascript" src="../functions/enter_keyshortcut.js?dummy=<?php echo (rand());?>" ></script>
+<script language="javascript" src="../functions/key_shortcut.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/customer-shortkey.js?dummy=<?php echo (rand());?>"></script>
 <style>
 .additional table tr th
 {
@@ -205,7 +205,7 @@ if($flag == 'true')
                                                                 <td width="21%" height="10" align="left" valign="top">Region:</td>
                                                                 <td width="79%" height="10" align="left" valign="top"><select name="region2" class="swiftselect" id="region2" style="width:180px;">
                                                                     <option value="">ALL</option>
-                                                                    <? 
+                                                                    <?php 
 										                               	include('../inc/region1.php');
 											                        ?>
                                                                   </select></td>
@@ -216,7 +216,7 @@ if($flag == 'true')
                                                                 <td height="10" align="left"> Branch:</td>
                                                                 <td align="left" valign="top"   height="10" ><select name="branch2" class="swiftselect" id="branch2" style="width:180px;">
                                                                     <option value="">ALL</option>
-                                                                    <? include('../inc/branch1.php');?>
+                                                                    <?php include('../inc/branch1.php');?>
                                                                   </select></td>
                                                               </tr>
 
@@ -305,7 +305,7 @@ if($flag == 'true')
                                                   </tr>
                                                   <tr>
                                                     <td colspan="4" valign="top" bgcolor="#FFFFFF" style="border:solid 1px #A8A8A8" align="left"><div style="height:230px; overflow:scroll">
-                                                        <? include('../inc/customproduct.php'); ?>
+                                                        <?php include('../inc/customproduct.php'); ?>
                                                       </div></td>
                                                   </tr>
                                                   <tr>
@@ -415,7 +415,7 @@ if($flag == 'true')
                <td valign="top" bgcolor="#EDF4FF" align="left">
                    <select name="dealerid" class="swiftselect-mandatory" id="dealerid" style=" width:225px">
                       <option value="">Select A Dealer</option>
-                       <? include('../inc/firstdealer.php'); ?>
+                       <?php include('../inc/firstdealer.php'); ?>
                     </select>
                </td>
          </tr>
@@ -469,7 +469,7 @@ if($flag == 'true')
    <td>
 <select name="servicenametypes[]" class="swiftselect" style="width:195px;">
      <option value="" selected="selected">Select a Item</option>
-        <? include('../inc/services.php'); ?>
+        <?php include('../inc/services.php'); ?>
     </select>
     </td>
     <td>
@@ -482,7 +482,7 @@ if($flag == 'true')
    <td>
 <select name="servicenametypes[]" class="swiftselect" style="width:195px;">
      <option value="" selected="selected">Select a Item</option>
-        <? include('../inc/services.php'); ?>
+        <?php include('../inc/services.php'); ?>
     </select>
     </td>
     <td>
@@ -495,7 +495,7 @@ if($flag == 'true')
    <td>
 <select name="servicenametypes[]" class="swiftselect" style="width:195px;">
      <option value="" selected="selected">Select a Item</option>
-        <? include('../inc/services.php'); ?>
+        <?php include('../inc/services.php'); ?>
     </select>
     </td>
     <td>
@@ -685,6 +685,6 @@ padding-left: 25px;">Service Details</td></tr>
 
 <script>gettotalcustomercount();</script>
 <div id="seztaxuploaddiv" style="display:none;">
-  <? include('../inc/seztaxuploaddiv.php'); ?>
+  <?php include('../inc/seztaxuploaddiv.php'); ?>
 </div>
-<? }?>
+<?php }?>

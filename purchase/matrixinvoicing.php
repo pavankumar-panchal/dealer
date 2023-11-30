@@ -1,4 +1,4 @@
-<?
+<?php
 include('../inc/eventloginsert.php');
 $userid = imaxgetcookie('dealeruserid');
 
@@ -84,12 +84,12 @@ else
 if($flag == 'true')
 {
 ?>
-<link href="../style/main.css?dummy = <? echo (rand());?>" rel=stylesheet>
-<link media="screen" rel="stylesheet" href="../style/colorbox-invoicing.css?dummy=<? echo (rand());?>"  />
-<script language="javascript" src="../functions/javascript.js?dummy = <? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/matrixinvoicing.js?dummy = <? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/colorbox.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
+<link href="../style/main.css?dummy = <?php echo (rand());?>" rel=stylesheet>
+<link media="screen" rel="stylesheet" href="../style/colorbox-invoicing.css?dummy=<?php echo (rand());?>"  />
+<script language="javascript" src="../functions/javascript.js?dummy = <?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/matrixinvoicing.js?dummy = <?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/colorbox.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
 <!-- <script language="javascript">
   $(document).ready(function(){
     $('.producttype option').css({
@@ -232,18 +232,18 @@ $('.producttype option').eq(0).css({
                                         <tr>
                                           <td  width="12%"><div align="left"><strong>Sales Person: </strong></div></td>
                                           <td width="30%" bgcolor="#f7faff" >
-                                            <? if($branchhead == 'yes') {?>
+                                            <?php if($branchhead == 'yes') {?>
                                               <div align="left">
                                                 <select name="salesperson" class="swiftselect-mandatory" id="salesperson" style="width:180px;" onchange="getdealerdetails(this);">
                                                   <option value="">Make A Selection</option>
-                                                    <? include('../inc/matrix-dealer-invoicing.php'); ?>
+                                                    <?php include('../inc/matrix-dealer-invoicing.php'); ?>
                                                 </select>
                                               </div>
-                                              <? } else { ?>
-                                                <div align="left" id="displaymarketingexe"><? echo($dealername); ?>
-                                                <input type="hidden" name="dealernamehidden" id="dealernamehidden" value="<? echo($dealername); ?>"/>
-                                                <input type="hidden" name="dealeridhidden" id="dealeridhidden" value="<? echo($userid); ?>"/></div>
-                                              <? } ?>
+                                              <?php } else { ?>
+                                                <div align="left" id="displaymarketingexe"><?php echo($dealername); ?>
+                                                <input type="hidden" name="dealernamehidden" id="dealernamehidden" value="<?php echo($dealername); ?>"/>
+                                                <input type="hidden" name="dealeridhidden" id="dealeridhidden" value="<?php echo($userid); ?>"/></div>
+                                              <?php } ?>
                                           </td> 
                                     </tr>
                                           
@@ -253,8 +253,8 @@ $('.producttype option').eq(0).css({
                                             <input type="hidden" name="cgstrate" id="cgstrate" value="<?php echo $cgst_tax_rate; ?>"/>
                                             <input type="hidden" name="sgstrate" id="sgstrate" value="<?php echo $sgst_tax_rate; ?>"/>
                                             <input type="hidden" name="state_gst_code"  id="state_gst_code" />
-                                            <input type="hidden" name="branchhidden" id="branchhidden" value="<? echo($branch_gst_code); ?>"/>
-                                            <input type="hidden" name="branch_gstin" id="branch_gstin" value="<? echo($branch_gstin); ?>"/>
+                                            <input type="hidden" name="branchhidden" id="branchhidden" value="<?php echo($branch_gst_code); ?>"/>
+                                            <input type="hidden" name="branch_gstin" id="branch_gstin" value="<?php echo($branch_gstin); ?>"/>
                                             <input type="hidden" name="cgst_tax_amount"  id="cgst_tax_amount" />
                                             <input type="hidden" name="sgst_tax_amount"  id="sgst_tax_amount" />
                                             <input type="hidden" name="igst_tax_amount"  id="igst_tax_amount" />
@@ -476,7 +476,7 @@ $('.producttype option').eq(0).css({
                                                   <br>
                                                   <br>
                                                   <span id="generatedbypreview">
-                                                  <?  echo($dealername); ?>
+                                                  <?php  echo($dealername); ?>
                                                   </span></div></td>
                                             </tr>
                                           </tbody>
@@ -508,4 +508,4 @@ $('.producttype option').eq(0).css({
 <script>
 gettotalcustomercount();
 </script>
-<? } ?>
+<?php } ?>

@@ -1,13 +1,13 @@
-<? 
+<?php 
 $userid = imaxgetcookie('dealeruserid');
 include('../inc/eventloginsert.php');
 
 ?>
 
-<link href="../style/style.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/dealerinteraction.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/getdistrictjs.php?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo (rand());?>"></script>
+<link href="../style/style.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/dealerinteraction.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/getdistrictjs.php?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo (rand());?>"></script>
 <table width="952" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
     <td width="23%" valign="top" style="border-right:#1f4f66 1px solid;border-bottom:#1f4f66 1px solid; text-align:left" ><table width="100%" border="0" cellspacing="0" cellpadding="0" id="mainwrap">
@@ -82,7 +82,7 @@ include('../inc/eventloginsert.php');
                                             <td width="37%" align="left" valign="top">Business Name:</td>
                                             <td width="63%" align="left" valign="top" bgcolor="#f7faff" id="displaycustomername">&nbsp;</td>
                                           </tr>
-                                             <?
+                                             <?php
 	  $query = "Select businessname,dealerusername from inv_mas_dealer where slno = '".$userid."'";
 	  $fetch = runmysqlqueryfetch($query);
 	  $businessname =strtoupper($fetch['businessname']); 
@@ -91,7 +91,7 @@ include('../inc/eventloginsert.php');
        <tr bgcolor="#EDF4FF">
                                             <td align="left" valign="top">Interaction Category:</td>
                                             <td align="left" valign="top" bgcolor="#EDF4FF" ><select name="interaction" class="swiftselect-mandatory" id="interaction" style="width:200px">
-                                                <? 
+                                                <?php 
 											include('../inc/interactiontype.php');
 											?>
                                               </select></td>
@@ -103,7 +103,7 @@ include('../inc/eventloginsert.php');
                                       <td width="46%" valign="top"><table width="99%" height="75" border="0" cellpadding="3" cellspacing="0">
                                       <tr bgcolor="#EDF4FF">
                                             <td align="left" valign="top">Entered By:</td>
-                                            <td align="left" valign="top" bgcolor="#EDF4FF" id="displayenteredby"> <? echo( $businessname); 
+                                            <td align="left" valign="top" bgcolor="#EDF4FF" id="displayenteredby"> <?php echo( $businessname); 
 											?></td>
                                           </tr><tr>
                                             <td align="left" valign="top">Entered Through:</td>
@@ -112,7 +112,7 @@ include('../inc/eventloginsert.php');
                                           
                                           <tr bgcolor="#f7faff">
                                             <td width="35%" align="left" valign="top" bgcolor="#EDF4FF">Entered Date:</td>
-                                            <td width="65%" align="left" valign="top" bgcolor="#EDF4FF" id="interactiondate"><? echo(datetimelocal('d-m-Y')." "."(".datetimelocal('H:i')).")"; ?></td>
+                                            <td width="65%" align="left" valign="top" bgcolor="#EDF4FF" id="interactiondate"><?php echo(datetimelocal('d-m-Y')." "."(".datetimelocal('H:i')).")"; ?></td>
                                           </tr>
                                           
                                           <!--<tr bgcolor="#edf4ff">

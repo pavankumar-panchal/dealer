@@ -1,4 +1,4 @@
-<?
+<?php
 ## Created By Sarasati  ##
 include('../inc/eventloginsert.php');
 $userid = imaxgetcookie('dealeruserid');
@@ -29,14 +29,14 @@ else
 	{
 
 ?>
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<link href="../style/fSelect.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/dealerpincardallot.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/dealerpinallot.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo (rand());?>"></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<link href="../style/fSelect.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/dealerpincardallot.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/dealerpinallot.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo (rand());?>"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script language="javascript" src="../functions/fSelect.js?dummy=<? echo (rand());?>"></script>
+<script language="javascript" src="../functions/fSelect.js?dummy=<?php echo (rand());?>"></script>
 
 <div id="demolink" style="background: red;color: #fff;padding: 30px;font-size: 21px;text-align: center;">DEMO TEST LINK</div>
 <table width="952" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
@@ -129,7 +129,7 @@ else
                                                 <td width="57%" height="34px;">
                                                 	<select name="selectedproduct" class="swiftselect" id="selectedproduct" style="width:180px;" onChange="selectedproductdealer();">
                                                         <option value="">ALL</option>
-                                                        <? include('../inc/product-dealers.php');?>
+                                                        <?php include('../inc/product-dealers.php');?>
                                                     </select>
                                 				</td>
                                               </tr>
@@ -159,7 +159,7 @@ else
                                              <!-- <tr>
                                                 <td width="43%" height="34px;"><strong>Quantity</strong></td>
                                                 <td width="57%" height="34px;">
-                                                 <select name="quantity" class="swiftselect-mandatory" id="quantity" style="width:180px;" onchange="getamount(<? echo($userid); ?>);">
+                                                 <select name="quantity" class="swiftselect-mandatory" id="quantity" style="width:180px;" onchange="getamount(<?php echo($userid); ?>);">
                                                   <option value="">Make A Selection</option>
                                                   <option value="1">1</option>
                                                   <option value="2">2</option>
@@ -212,7 +212,7 @@ else
                                       <td width="50%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="3">
                                       <tr bgcolor="#EDF4FF">
                                             <td align="left" valign="top" bgcolor="#EDF4FF">Date:</td>
-                                            <td align="left" valign="top" bgcolor="#EDF4FF"><input name="currentdate" type="text" class="swifttext" id="currentdate" style="background:#FEFFE6;" size="30" maxlength="40" readonly="readonly"  autocomplete="off" value="<? echo(datetimelocal('d-m-Y')." (".datetimelocal('H:i').")"); ?>"/></td>
+                                            <td align="left" valign="top" bgcolor="#EDF4FF"><input name="currentdate" type="text" class="swifttext" id="currentdate" style="background:#FEFFE6;" size="30" maxlength="40" readonly="readonly"  autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')." (".datetimelocal('H:i').")"); ?>"/></td>
                                           </tr>
                                           <tr bgcolor="#f7faff">
                                             <td align="left" valign="top">Remarks:</td>
@@ -342,4 +342,4 @@ else
 gettotalcustomercount();
 gettotalcusattachcard();
 </script>
-<? }} ?>
+<?php }} ?>

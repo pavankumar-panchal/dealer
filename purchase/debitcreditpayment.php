@@ -1,4 +1,4 @@
-<?
+<?php
 $userid = imaxgetcookie('userid');
 
 $query = "select * from inv_mas_dealer left join inv_mas_district on inv_mas_dealer.district = inv_mas_district.districtcode left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode where inv_mas_dealer.slno = '".$userid."' ";
@@ -19,9 +19,9 @@ $emailid = trim($emailarray[0]);
 
 
 ?>
-<link href="../style/main.css?dummy = <? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/javascript.js?dummy = <? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/debitcreditpayment.js?dummy = <? echo (rand());?>" type="text/javascript"></script>
+<link href="../style/main.css?dummy = <?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/javascript.js?dummy = <?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/debitcreditpayment.js?dummy = <?php echo (rand());?>" type="text/javascript"></script>
 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
     <td valign="top" style="border-right:#1f4f66 1px solid;border-bottom:#1f4f66 1px solid;" ><table width="100%" border="0" cellspacing="0" cellpadding="0" id="mainwrap">
@@ -48,15 +48,15 @@ $emailid = trim($emailarray[0]);
                                           <tr>
                                             <td width="20%" align="left" bgcolor="#EDF4FF">Enter the Amount:</td>
                                             <td width="80%" bgcolor="#f7faff">
-                                            <input name="businessname" type="hidden" id="businessname" value="<? echo($businessname); ?>" />
-                                              <input name="contactperson" type="hidden" id="contactperson" value="<? echo($contactperson); ?>" />
-                                              <input name="address" type="hidden" id="address" value="<? echo($place); ?>" />
-                                              <input name="district" type="hidden" id="district" value="<? echo($district); ?>" />
-                                              <input name="state" type="hidden" id="state" value="<? echo($state); ?>" />
-                                              <input name="pincode" type="hidden" id="pincode" value="<? echo($pincode); ?>" />
-                                              <input name="phone" type="hidden" id="phone" value="<? echo($phone); ?>" />
-                                              <input name="emailid" type="hidden" id="emailid" value="<? echo($emailid); ?>" />
-                                              <input name="dealerid" type="hidden" id="dealerid" value="<? echo($dealerid); ?>" />
+                                            <input name="businessname" type="hidden" id="businessname" value="<?php echo($businessname); ?>" />
+                                              <input name="contactperson" type="hidden" id="contactperson" value="<?php echo($contactperson); ?>" />
+                                              <input name="address" type="hidden" id="address" value="<?php echo($place); ?>" />
+                                              <input name="district" type="hidden" id="district" value="<?php echo($district); ?>" />
+                                              <input name="state" type="hidden" id="state" value="<?php echo($state); ?>" />
+                                              <input name="pincode" type="hidden" id="pincode" value="<?php echo($pincode); ?>" />
+                                              <input name="phone" type="hidden" id="phone" value="<?php echo($phone); ?>" />
+                                              <input name="emailid" type="hidden" id="emailid" value="<?php echo($emailid); ?>" />
+                                              <input name="dealerid" type="hidden" id="dealerid" value="<?php echo($dealerid); ?>" />
                                               <input name="amount" type="text" class="swifttext" id="amount" value="" size="25" maxlength="7"  /></td>
                                           </tr>
                                         </table>

@@ -1,12 +1,12 @@
-<?
+<?php
 include('../inc/eventloginsert.php');
 ?>
-<link media="screen" rel="stylesheet" href="../style/colorbox.css?dummy=<? echo (rand());?>"  />
-<script language="javascript" src="../functions/custdata.js?dummy=<? echo (rand());?>" ></script>
-<script language="javascript" src="../functions/javascripts.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/colorbox-analysis.js?dummy=<? echo (rand());?>" ></script>
-<script language="javascript" src="../functions/getdistrictjs.php?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/getselectiontypejs.php?dummy=<? echo (rand());?>"></script>
+<link media="screen" rel="stylesheet" href="../style/colorbox.css?dummy=<?php echo (rand());?>"  />
+<script language="javascript" src="../functions/custdata.js?dummy=<?php echo (rand());?>" ></script>
+<script language="javascript" src="../functions/javascripts.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/colorbox-analysis.js?dummy=<?php echo (rand());?>" ></script>
+<script language="javascript" src="../functions/getdistrictjs.php?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/getselectiontypejs.php?dummy=<?php echo (rand());?>"></script>
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
@@ -506,7 +506,7 @@ include('../inc/eventloginsert.php');
                                               <td align="left" id="headingname" style="font-weight:bold;COLOR: #000000;FONT-FAMILY:calibri;FONT-SIZE: 13px">STATE:</td>
                                               <td align="left" valign="top" ><select name="state" class="swiftselect-mandatory" id="state" onchange="getdistrict('districtcodedisplay',this.value);" onkeyup="getdistrict('districtcodedisplay',this.value);"  style="width:200px;">
                                                   <option value="">Select A State</option>
-                                                  <? include('../inc/state.php'); ?>
+                                                  <?php include('../inc/state.php'); ?>
                                                 </select></td>
                                             </tr>
                                             <tr>

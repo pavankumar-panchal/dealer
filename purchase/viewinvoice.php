@@ -1,4 +1,4 @@
-<?
+<?php
 $userid = imaxgetcookie('userid');
 $query = "select inv_mas_dealer.businessname as dealername,inv_mas_dealer.relyonexecutive, inv_mas_dealer.district, inv_mas_district.statecode,inv_mas_state.statename from inv_mas_dealer left join inv_mas_district on inv_mas_dealer.district = inv_mas_district.districtcode
 left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode where inv_mas_dealer.slno = '".$userid."'";
@@ -44,10 +44,10 @@ if($flag == 'true')
 {
 ?>
 
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/viewinvoice.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/javascripts.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/viewinvoice.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/javascripts.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
 
 <table width="952" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
   <tr>
@@ -159,7 +159,7 @@ if($flag == 'true')
                                                           <input type="hidden" name="hiddenfromdate" id="hiddenfromdate" />
                                                         </div></td>
                                                         <td bgcolor="#f7faff"><div align="left">
-                                                          <input name="fromdate" type="text" class="swifttext-mandatory" id="DPC_attachfromdate" size="30" autocomplete="off" value="<? echo(datetimelocal('d-m-Y')); ?>" readonly="readonly"/>
+                                                          <input name="fromdate" type="text" class="swifttext-mandatory" id="DPC_attachfromdate" size="30" autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')); ?>" readonly="readonly"/>
                                                           <input type="hidden" name="flag" id="flag" value="true" />
                                                         </div></td>
                                                       </tr>
@@ -168,7 +168,7 @@ if($flag == 'true')
                                                           <input type="hidden" name="hiddentodate" id="hiddentodate" />
                                                         </div></td>
                                                         <td><div align="left">
-                                                          <input name="todate" type="text" class="swifttext-mandatory" id="DPC_attachtodate" size="30" autocomplete="off" value="<? echo(datetimelocal('d-m-Y')); ?>" readonly="readonly" />
+                                                          <input name="todate" type="text" class="swifttext-mandatory" id="DPC_attachtodate" size="30" autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')); ?>" readonly="readonly" />
                                                         </div></td>
                                                       </tr>
                                                       <tr bgcolor="#EDF4FF">
@@ -191,7 +191,7 @@ if($flag == 'true')
                                                       </tr>
                                                       <tr bgcolor="#f7faff">
                                                         <td colspan="4" valign="top" bgcolor="#f7faff" align="left"><div style="height:240px; overflow:scroll">
-                                                            <? include('../inc/product-report.php'); ?>
+                                                            <?php include('../inc/product-report.php'); ?>
                                                         </div></td>
                                                       </tr>
                                                       <tr bgcolor="#EDF4FF">
@@ -317,4 +317,4 @@ if($flag == 'true')
       </table></td>
   </tr>
 </table>
-<? }?>
+<?php }?>

@@ -1,4 +1,4 @@
-<? 
+<?php 
 	include('../inc/eventloginsert.php');
 	$userid = imaxgetcookie('dealeruserid');
 	$query = "select * from inv_mas_dealer where slno = '".$userid."'";
@@ -16,10 +16,10 @@
 	{
 ?>
 
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/receiptregister.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/receiptbranchheadselectjs.php?dummy=<? echo (rand());?>" ></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/receiptregister.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/receiptbranchheadselectjs.php?dummy=<?php echo (rand());?>" ></script>
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
@@ -58,14 +58,14 @@
     <td width="7%" align="left" valign="top" bgcolor="#EDF4FF">All Time</td>
     <td width="6%" align="left" valign="top" bgcolor="#EDF4FF"><input name="alltime" type="checkbox" id="alltime" onclick="disablethedates()" /></td>
     <td width="9%" align="left" valign="top" bgcolor="#EDF4FF">From Date: </td>
-    <td width="28%" align="left" valign="top" bgcolor="#EDF4FF"><input name="fromdate" type="text" class="swifttext-mandatory" id="DPC_fromdate" size="30" autocomplete="off" value="<? echo(datetimelocal('d-m-Y')); ?>" readonly="readonly"/>
+    <td width="28%" align="left" valign="top" bgcolor="#EDF4FF"><input name="fromdate" type="text" class="swifttext-mandatory" id="DPC_fromdate" size="30" autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')); ?>" readonly="readonly"/>
       <input type="hidden" name="flag" id="flag" value="true" />
       <input type="hidden" name="hiddentotalreceipts" id="hiddentotalreceipts" value="" />
       <input type="hidden" name="hiddentotalamount" id="hiddentotalamount" value="" /></td>
     <td width="7%" align="left" valign="top" bgcolor="#EDF4FF">To Date:</td>
     <td width="43%" align="left" valign="top" bgcolor="#EDF4FF"><label for="sto"></label>
       <label for="spp">
-        <input name="todate" type="text" class="swifttext-mandatory" id="DPC_todate" size="30" autocomplete="off" value="<? echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/>
+        <input name="todate" type="text" class="swifttext-mandatory" id="DPC_todate" size="30" autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/>
       </label></td>
     </tr>
 </table>
@@ -88,7 +88,7 @@
 </table>
 </td>
                                     </tr>
-                                   <tr><td  bgcolor="#EDF4FF"> <? if($branchhead == 'yes' ) {  ?> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                   <tr><td  bgcolor="#EDF4FF"> <?php if($branchhead == 'yes' ) {  ?> <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
 
                                     <tr><td bgcolor="#EDF4FF"><div align="left" style="display:block;height:20px; padding-top:5px; " id="detailsdiv" >
@@ -228,7 +228,7 @@
                                                       </tr>
                                                       <tr>
                                                         <td colspan="4" valign="top" bgcolor="#FFFFFF" style="border:solid 1px #A8A8A8" align="left"><div style="height:134px; overflow:scroll">
-                                                          <? include('../inc/productdetails.php'); ?>
+                                                          <?php include('../inc/productdetails.php'); ?>
                                                         </div></td>
                                                       </tr>
                                                       <tr>
@@ -237,7 +237,7 @@
                                                           <select name="selectproduct" class="swiftselect" id="selectproduct" style="width:75px"   >
                                                             <option value="ALL"  selected="selected">ALL</option>
                                                             <option value="NONE">NONE</option>
-                                                            <? include('../inc/productgroup.php') ?>
+                                                            <?php include('../inc/productgroup.php') ?>
                                                           </select>
                                                         </strong></td>
                                                         <td align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -252,7 +252,7 @@
                                                       </tr>
                                                       <tr >
                                                         <td  colspan="3" bgcolor="#FFFFFF" style="border:solid 1px #A8A8A8" align="left"><div style="height:105px; overflow:scroll" >
-                                                          <? include('../inc/itemlist.php'); ?>
+                                                          <?php include('../inc/itemlist.php'); ?>
                                                         </div></td>
                                                       </tr>
                                                       <tr>
@@ -276,7 +276,7 @@
                                                 </table></td>
                                             </tr>
                                           </table>
-                                        </div></td></tr></table> <? }?> </td></tr>
+                                        </div></td></tr></table> <?php }?> </td></tr>
                                     <tr>
                                       <td align="right" valign="middle" style="padding-right:15px; border-top:1px solid #d1dceb;"><table width="98%" border="0" cellspacing="0" cellpadding="0">
                                           
@@ -376,6 +376,6 @@
       </table></td>
   </tr>
 </table>
-<?
+<?php
 }
 ?>

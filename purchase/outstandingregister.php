@@ -1,4 +1,4 @@
-<? 
+<?php 
 	include('../inc/eventloginsert.php');
 	$userid = imaxgetcookie('dealeruserid');
 	$query = "select * from inv_mas_dealer where slno = '".$userid."'";
@@ -15,10 +15,10 @@
 	{
 ?>
 
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/outstandingregister.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/branchheadselectjs.php?dummy=<? echo (rand());?>" ></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/outstandingregister.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/branchheadselectjs.php?dummy=<?php echo (rand());?>" ></script>
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
@@ -55,7 +55,7 @@
                                       <td width="50%" valign="top" style="border-right:1px solid #d1dceb;"><table width="100%" border="0" cellspacing="0" cellpadding="3">
                                         <tr bgcolor="#f7faff">
                                           <td width="29%" align="left" valign="top" bgcolor="#EDF4FF">As On  Date: </td>
-                                          <td width="71%" align="left" valign="top" bgcolor="#EDF4FF"><input name="fromdate" type="text" class="swifttext-mandatory" id="DPC_fromdate" size="30" autocomplete="off" value="<? echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/> <input type="hidden" name="flag" id="flag" value="true" />
+                                          <td width="71%" align="left" valign="top" bgcolor="#EDF4FF"><input name="fromdate" type="text" class="swifttext-mandatory" id="DPC_fromdate" size="30" autocomplete="off" value="<?php echo(datetimelocal('d-m-Y')); ?>"  readonly="readonly"/> <input type="hidden" name="flag" id="flag" value="true" />
                                             <input type="hidden" name="hiddentotalinvoices" id="hiddentotalinvoices" value="" />
                                             <input type="hidden" name="hiddentotaloutstanding" id="hiddentotaloutstanding" value="" /></td>
                                         </tr>
@@ -185,4 +185,4 @@
       </table></td>
   </tr>
 </table>
-<? }?>
+<?php }?>

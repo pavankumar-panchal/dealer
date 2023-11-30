@@ -1,11 +1,11 @@
-<?
+<?php
 include('../inc/eventloginsert.php');
 $userid = imaxgetcookie('dealeruserid');
 ?>
-<link href="../style/main.css?dummy = <? echo (rand());?>" rel=stylesheet>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy = <? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/javascript.js?dummy = <? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/simplepurchase.js?dummy = <? echo (rand());?>" type="text/javascript"></script>
+<link href="../style/main.css?dummy = <?php echo (rand());?>" rel=stylesheet>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy = <?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/javascript.js?dummy = <?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/simplepurchase.js?dummy = <?php echo (rand());?>" type="text/javascript"></script>
 <script language="JavaScript">
 	if (navigator.platform.toString().toLowerCase().indexOf("linux") != -1)
 	{
@@ -40,7 +40,7 @@ $userid = imaxgetcookie('dealeruserid');
                                               <td bgcolor="#f7faff"><div align="left">
                                                 <select name="product" class="swiftselect-mandatory" id="product" style="width:180px;" onchange="generatebillnumber();">
                                                   <option value="">Make A Selection</option>
-                                                  <? 
+                                                  <?php 
 											include('../inc/product.php');
 											?>
                                                 </select>
@@ -50,7 +50,7 @@ $userid = imaxgetcookie('dealeruserid');
                                               </div></td>
                                               <td bgcolor="#f7faff"><div align="left">Date:</div></td>
                                               <td bgcolor="#f7faff"><div align="left">
-                                                <input name="datetime" class="swifttext-mandatory" id="datetime"  value="<? echo(datetimelocal('d-m-Y'))?>"/>
+                                                <input name="datetime" class="swifttext-mandatory" id="datetime"  value="<?php echo(datetimelocal('d-m-Y'))?>"/>
                                               </div></td>
                                             </tr>
                                              <tr>
@@ -86,7 +86,7 @@ $userid = imaxgetcookie('dealeruserid');
                                                   <td width="37%"><div align="center">
                                                     <input name="new"  value="New Product" type="submit" class="swiftchoicebutton" id="new"  onClick="newproduct();"/>
                                                     &nbsp;
-                                                    <input name="save"  value="Save Product" type="submit" class="swiftchoicebutton" id="save"  onClick="formsubmit('save','<? echo($userid) ?>');"/>
+                                                    <input name="save"  value="Save Product" type="submit" class="swiftchoicebutton" id="save"  onClick="formsubmit('save','<?php echo($userid) ?>');"/>
                                                   &nbsp;
                                                   <input name="delete"  value="Del. Product" type="submit" class="swiftchoicebutton" id="delete"  onClick="formsubmit('delete');"/>
                                                   </div></td>
@@ -110,7 +110,7 @@ $userid = imaxgetcookie('dealeruserid');
                                          <tr><td colspan="4"><div align="center">
                                            <input name="newtransaction"  value="New Transaction" type="button" class="swiftchoicebuttonbig" id="newtransaction"   onclick="newentry();"/>
                                            &nbsp;
-                                           <input name="confirm"  value="Confirm &amp; Proceed" type="submit" class="swiftchoicebuttonbig" id="confirm" onclick="attachcards(<? echo($userid) ?>);" />
+                                           <input name="confirm"  value="Confirm &amp; Proceed" type="submit" class="swiftchoicebuttonbig" id="confirm" onclick="attachcards(<?php echo($userid) ?>);" />
                                            &nbsp;</div></td></tr>
                                         </table>
                                       </td>

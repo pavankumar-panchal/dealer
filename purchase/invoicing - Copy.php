@@ -1,4 +1,4 @@
-<?
+<?php
 include('../inc/eventloginsert.php');
 $userid = imaxgetcookie('dealeruserid');
 $query = "select inv_mas_dealer.businessname as dealername,inv_mas_dealer.relyonexecutive, inv_mas_dealer.district, inv_mas_district.statecode,inv_mas_state.statename,inv_mas_dealer.enablebilling as enablebilling,inv_mas_dealer.telecaller ,inv_mas_dealer.branchhead from inv_mas_dealer left join inv_mas_district on inv_mas_dealer.district = inv_mas_district.districtcode
@@ -47,17 +47,17 @@ else
 if($flag == 'true')
 {
 ?>
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<link media="screen" rel="stylesheet" href="../style/colorbox-invoicing.css?dummy=<? echo (rand());?>"  />
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/invoicing.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript"  src="../functions/getdistrictjs.php?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/enter_keyshortcut.js?dummy=<? echo (rand());?>" ></script>
-<script language="javascript" src="../functions/key_shortcut.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/customer-shortkey.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/datepickercontrol.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/colorbox.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/fileupload.js?dummy=<? echo (rand());?>"></script>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<link media="screen" rel="stylesheet" href="../style/colorbox-invoicing.css?dummy=<?php echo (rand());?>"  />
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/invoicing.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript"  src="../functions/getdistrictjs.php?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/enter_keyshortcut.js?dummy=<?php echo (rand());?>" ></script>
+<script language="javascript" src="../functions/key_shortcut.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/customer-shortkey.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/datepickercontrol.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/colorbox.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/fileupload.js?dummy=<?php echo (rand());?>"></script>
 
 <table width="952" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="text-align:left">
   <tr>
@@ -190,7 +190,7 @@ if($flag == 'true')
                                         </tr>
                                         <tr>
                                           <td width="38%"><strong>Marketing Exe: </strong></td>
-                                          <td width="62%" id="displaymarketingexe"><? if(($telecaller == 'yes') || ($branchhead  == 'yes')) echo('Not Selected'); else echo($dealername); ?></td>
+                                          <td width="62%" id="displaymarketingexe"><?php if(($telecaller == 'yes') || ($branchhead  == 'yes')) echo('Not Selected'); else echo($dealername); ?></td>
                                         </tr>
                                         <tr>
                                           <td><strong>Current Dealer:</strong></td>
@@ -243,12 +243,12 @@ if($flag == 'true')
                     <tr>
                       <td colspan="3"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #308ebc; ">
                           <tr>
-                            <td colspan="2"><? if(($telecaller == 'yes') || ($branchhead == 'yes')) {?>
+                            <td colspan="2"><?php if(($telecaller == 'yes') || ($branchhead == 'yes')) {?>
                               <table width="100%" border="0" cellspacing="0" cellpadding="4" style="border:#CCCCCC 1px solid " bgcolor="#FFFFEC" >
                                 <tr>
                                   <td width="31%"  height="42px;" valign="middle"><select name="dealer" class="swiftselect" id="dealer" style="width:195px;" disabled="disabled">
                                       <option value="" selected="selected">Select a Dealer</option>
-                                      <? 
+                                      <?php 
 											include('../inc/dealer-invoicing.php');
 											?>
                                     </select></td>
@@ -275,9 +275,9 @@ if($flag == 'true')
                                   <td colspan="3"></td>
                                 </tr>
                               </table>
-                              <? } else {?>
+                              <?php } else {?>
                               &nbsp;
-                              <? } ?></td>
+                              <?php } ?></td>
                           </tr>
                           <tr>
                             <td colspan="2" valign="top"><div id="maindiv">
@@ -291,7 +291,7 @@ if($flag == 'true')
                                                   <td width="14%"><strong>Item</strong>(Software): </td>
                                                   <td width="29%"><select name="product" class="swiftselect" id="product" style="width:200px;">
                                                       <option value="" selected="selected">Select a Item</option>
-                                                      <? 
+                                                      <?php 
 											include('../inc/productforpurchase.php');
 											?>
                                                     </select></td>
@@ -299,7 +299,7 @@ if($flag == 'true')
                                                   <td width="12%"><strong>Item</strong>(others):</td>
                                                   <td width="29%"><select name="product2" class="swiftselect" id="product2" style="width:200px;">
                                                       <option value="" selected="selected">Select a Item</option>
-                                                      <? 
+                                                      <?php 
 											include('../inc/services.php');
 											?>
                                                     </select></td>
@@ -600,7 +600,7 @@ if($flag == 'true')
                                                                                             <tr>
                                                                                               <td width="256" valign="top">Due Date:<br />
                                                                                                 <br />
-                                                                                                <input name="DPC_duedate" type="text" class="swifttext-mandatory" id="DPC_duedate" size="20" maxlength="12" autocomplete="off"   value="<? echo(datetimelocal('d-m-Y')); ?>" readonly="readonly"/></td>
+                                                                                                <input name="DPC_duedate" type="text" class="swifttext-mandatory" id="DPC_duedate" size="20" maxlength="12" autocomplete="off"   value="<?php echo(datetimelocal('d-m-Y')); ?>" readonly="readonly"/></td>
                                                                                               <td width="420">Reason:<br />
                                                                                                 <br />
                                                                                                 <input name="remarks" type="text" class="swifttextareanew" id="remarks" maxlength="100" style="width:450px"/></td>
@@ -745,7 +745,7 @@ if($flag == 'true')
                                                   <br>
                                                   <br>
                                                   <span id="generatedbypreview">
-                                                  <?  echo($dealername); ?>
+                                                  <?php  echo($dealername); ?>
                                                   </span></div></td>
                                             </tr>
                                           </tbody>
@@ -898,7 +898,7 @@ if($flag == 'true')
                                                                                     <td width="33%" bgcolor="#edf4ff">State:</td>
                                                                                     <td width="67%" bgcolor="#edf4ff"><select name="state" class="swiftselect-mandatory type_enter focus_redclass" id="state" onchange="getdistrict('districtcodedisplay',this.value);" onkeyup="getdistrict('districtcodedisplay',this.value);"  style="width:200px;">
                                                                                         <option value="">Select A State</option>
-                                                                                        <? include('../inc/state.php'); ?>
+                                                                                        <?php include('../inc/state.php'); ?>
                                                                                       </select></td>
                                                                                   </tr>
                                                                                   <tr>
@@ -929,7 +929,7 @@ if($flag == 'true')
                                                                                     <td  bgcolor="#edf4ff">Type:</td>
                                                                                     <td  bgcolor="#edf4ff"><select name="type" class="swiftselect-mandatory  type_enter focus_redclass" id="type" style="width:170px">
                                                                                         <option value="" selected="selected">Type Selection</option>
-                                                                                        <? 
+                                                                                        <?php 
 											include('../inc/custype.php');
 											?>
                                                                                       </select></td>
@@ -938,7 +938,7 @@ if($flag == 'true')
                                                                                     <td bgcolor="#F7FAFF">Category:</td>
                                                                                     <td bgcolor="#F7FAFF"><select name="category" class="swiftselect-mandatory type_enter focus_redclass" id="category"  style="width:170px">
                                                                                         <option value="">Category Selection</option>
-                                                                                        <? 
+                                                                                        <?php 
 											include('../inc/category.php');
 											?>
                                                                                       </select></td>
@@ -1066,6 +1066,6 @@ if($flag == 'true')
 gettotalcustomercount();
 </script>
 <div id="seztaxuploaddiv" style="display:none;">
-  <? include('../inc/seztaxuploaddiv.php'); ?>
+  <?php include('../inc/seztaxuploaddiv.php'); ?>
 </div>
-<? }?>
+<?php }?>

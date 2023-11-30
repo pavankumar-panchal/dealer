@@ -1,24 +1,24 @@
-<?
+<?php
 include('../inc/eventloginsert.php');
 $query = "select forcesurrender from inv_mas_dealer where slno = '".$userid."'";
 $fetch = runmysqlqueryfetch($query);
 $forcesurrender = $fetch['forcesurrender'];
 ?>
-<link href="../style/main.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<link href="../style/shortkey.css?dummy=<? echo (rand());?>" rel=stylesheet>
-<link media="screen" rel="stylesheet" href="../style/colorbox-invoicing.css?dummy=<? echo (rand());?>"  />
-<script language="javascript"  src="../functions/cus-cardsearch.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript"  src="../functions/javascript.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript"  src="../functions/cus-regcardsearch.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript"  src="../functions/customer.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript"  src="../functions/getdistrictjs.php?dummy=<? echo (rand());?>"></script>
-<script language="javascript"  src="../functions/getdistrictfunction.php?dummy=<? echo (rand());?>"></script>
-<script language="javascript"  src="../functions/clipboardcopy.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript"  src="../functions/colorbox.js?dummy=<? echo (rand());?>" ></script>
-<script language="javascript" src="../functions/enter_keyshortcut.js?dummy=<? echo (rand());?>" ></script>
-<script language="javascript" src="../functions/key_shortcut.js?dummy=<? echo (rand());?>"></script>
-<script language="javascript" src="../functions/customer-shortkey.js?dummy=<? echo (rand());?>"></script>
-<? $userid = imaxgetcookie('dealeruserid');?>
+<link href="../style/main.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<link href="../style/shortkey.css?dummy=<?php echo (rand());?>" rel=stylesheet>
+<link media="screen" rel="stylesheet" href="../style/colorbox-invoicing.css?dummy=<?php echo (rand());?>"  />
+<script language="javascript"  src="../functions/cus-cardsearch.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript"  src="../functions/javascript.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript"  src="../functions/cus-regcardsearch.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript"  src="../functions/customer.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript"  src="../functions/getdistrictjs.php?dummy=<?php echo (rand());?>"></script>
+<script language="javascript"  src="../functions/getdistrictfunction.php?dummy=<?php echo (rand());?>"></script>
+<script language="javascript"  src="../functions/clipboardcopy.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript"  src="../functions/colorbox.js?dummy=<?php echo (rand());?>" ></script>
+<script language="javascript" src="../functions/enter_keyshortcut.js?dummy=<?php echo (rand());?>" ></script>
+<script language="javascript" src="../functions/key_shortcut.js?dummy=<?php echo (rand());?>"></script>
+<script language="javascript" src="../functions/customer-shortkey.js?dummy=<?php echo (rand());?>"></script>
+<?php $userid = imaxgetcookie('dealeruserid');?>
 <table width="952" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="text-align:left">
   <tr>
     <td width="23%" valign="top" style="border-right:#1f4f66 1px solid;border-bottom:#1f4f66 1px solid;" ><table width="100%" border="0" cellspacing="0" cellpadding="0" id="mainwrap">
@@ -83,7 +83,7 @@ $forcesurrender = $fetch['forcesurrender'];
                           </tr>
                         </table></td>
                     </tr>
-                    <? $query = "select inv_mas_dealer.businessname as dealername,inv_mas_dealer.relyonexecutive, inv_mas_dealer.district, inv_mas_district.statecode,inv_mas_state.statename from inv_mas_dealer left join inv_mas_district on inv_mas_dealer.district = inv_mas_district.districtcode
+                    <?php $query = "select inv_mas_dealer.businessname as dealername,inv_mas_dealer.relyonexecutive, inv_mas_dealer.district, inv_mas_district.statecode,inv_mas_state.statename from inv_mas_dealer left join inv_mas_district on inv_mas_dealer.district = inv_mas_district.districtcode
 left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode where inv_mas_dealer.slno = '".$userid."'";
 						$fetch = runmysqlqueryfetch($query);
 						$dealername = $fetch['dealername'];
@@ -111,7 +111,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                     <tr>
                       <td style="padding-top:3px"><table width="100%" border="0" cellspacing="0" cellpadding="3" style="border:1px dashed #999999">
                           <tr>
-                            <td bgcolor="#E1F0FF" ><div align="center"><strong>"You have been listed with Customers <? echo($displaybusinessname); ?>"</strong></div></td>
+                            <td bgcolor="#E1F0FF" ><div align="center"><strong>"You have been listed with Customers <?php echo($displaybusinessname); ?>"</strong></div></td>
                           </tr>
                         </table></td>
                     </tr>
@@ -233,7 +233,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                                 <td width="21%" height="10" align="left" valign="top">Region:</td>
                                                                 <td width="79%" height="10" align="left" valign="top"><select name="region2" class="swiftselect" id="region2" style="width:180px;">
                                                                     <option value="">ALL</option>
-                                                                    <? 
+                                                                    <?php 
 											include('../inc/region.php');
 											?>
                                                                   </select></td>
@@ -242,7 +242,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                                 <td align="left" valign="top" height="10" >State:</td>
                                                                 <td align="left" valign="top" height="10"><select name="state2" class="swiftselect" id="state2" onchange="getdistrictfilter('districtcodedisplaysearch',this.value);" onkeyup="getdistrictfilter('districtcodedisplaysearch',this.value);" style="width:180px;">
                                                                     <option value="">ALL</option>
-                                                                    <? include('../inc/state.php'); ?>
+                                                                    <?php include('../inc/state.php'); ?>
                                                                   </select></td>
                                                               </tr>
                                                               <tr>
@@ -255,14 +255,14 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                                 <td height="10" align="left"> Dealer:</td>
                                                                 <td align="left" valign="top"   height="10"><select name="currentdealer2" class="swiftselect" id="currentdealer2" style="width:180px;">
                                                                     <option value="">ALL</option>
-                                                                    <? include('../inc/firstdealer.php');?>
+                                                                    <?php include('../inc/firstdealer.php');?>
                                                                   </select></td>
                                                               </tr>
                                                               <tr>
                                                                 <td height="10" align="left"> Branch:</td>
                                                                 <td align="left" valign="top"   height="10" ><select name="branch2" class="swiftselect" id="branch2" style="width:180px;">
                                                                     <option value="">ALL</option>
-                                                                    <? include('../inc/branch.php');?>
+                                                                    <?php include('../inc/branch.php');?>
                                                                   </select></td>
                                                               </tr>
                                                               <tr>
@@ -270,7 +270,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                                 <td align="left" valign="top"   height="10" ><select name="type2" class="swiftselect" id="type2" style="width:180px;">
                                                                     <option value="">ALL</option>
                                                                     <option value="Not Selected">Not Selected</option>
-                                                                    <? include('../inc/custype.php');?>
+                                                                    <?php include('../inc/custype.php');?>
                                                                   </select></td>
                                                               </tr>
                                                               <tr>
@@ -278,7 +278,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                                 <td align="left" valign="top"   height="10" ><select name="category2" class="swiftselect" id="category2" style="width:180px;">
                                                                     <option value="">ALL</option>
                                                                     <option value="Not Selected">Not Selected</option>
-                                                                    <? include('../inc/category.php');?>
+                                                                    <?php include('../inc/category.php');?>
                                                                   </select></td>
                                                               </tr>
                                                             </table></td>
@@ -298,7 +298,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                   </tr>
                                                   <tr>
                                                     <td colspan="4" valign="top" bgcolor="#FFFFFF" style="border:solid 1px #A8A8A8" align="left"><div style="height:230px; overflow:scroll" align="left">
-                                                        <? include('../inc/productdetails.php'); ?>
+                                                        <?php include('../inc/productdetails.php'); ?>
                                                       </div></td>
                                                   </tr>
                                                   <tr>
@@ -307,7 +307,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                       <select name="selectproduct" class="swiftselect" id="selectproduct" style="width:140px" >
                                                         <option value="ALL"  selected="selected">ALL</option>
                                                         <option value="NONE">NONE</option>
-                                                        <? include('../inc/productgroup.php') ?>
+                                                        <?php include('../inc/productgroup.php') ?>
                                                       </select>
                                                       </strong></td>
                                                     <td width="29%" align="left"></td>
@@ -410,7 +410,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                                       <td width="33%" bgcolor="#edf4ff">State:</td>
                                                                       <td width="67%" bgcolor="#edf4ff"><select name="state" class="swiftselect-mandatory type_enter focus_redclass" id="state" onchange="getdistrict('districtcodedisplay',this.value);getgstcode(this.value);" onkeyup="getdistrict('districtcodedisplay',this.value);getgstcode(this.value);"  style="width:200px;">
                                                                           <option value="">Select A State</option>
-                                                                          <? include('../inc/state.php'); ?>
+                                                                          <?php include('../inc/state.php'); ?>
                                                                         </select></td>
                                                                     </tr>
                                                                     <tr>
@@ -439,7 +439,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                                       <td  bgcolor="#edf4ff">Type:</td>
                                                                       <td  bgcolor="#edf4ff"><select name="type" class="swiftselect  type_enter focus_redclass" id="type" style="width:200px">
                                                                           <option value="" selected="selected">Type Selection</option>
- <? 
+ <?php 
 											//include('../inc/custype.php');
 
 	$query = "SELECT slno,customertype FROM inv_mas_customertype ORDER BY customertype";
@@ -460,7 +460,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                                       <td bgcolor="#F7FAFF">Categories:</td>
                                                                       <td bgcolor="#F7FAFF"><select name="category" class="swiftselect type_enter focus_redclass" id="category"  style="width:200px">
                                                                           <option value="">Category Selection</option>
-                                            <? 
+                                            <?php 
 											//include('../inc/category.php');
 
 
@@ -991,7 +991,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                           <td align="left" valign="top"><div align="left">
                                                               <select name="delaerrep" class="swiftselect-mandatory" id="delaerrep" style="width:180px;" disabled="disabled">
                                                                 <option value="">Make A Selection</option>
-                                                                <? 
+                                                                <?php 
 											include('../inc/firstdealer.php');
 											?>
                                                               </select>
@@ -1228,7 +1228,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                     </div>
                                     <!-- forcesurrender added -->
                                     <div id="tabgroupgridc5" style="overflow:auto; height:130px; width:704px; padding:2px; display:none;" align="center">
-                                      <? if($forcesurrender == 'yes') { ?>
+                                      <?php if($forcesurrender == 'yes') { ?>
                                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
                                           <td><form id="forcesurrender" name ="forcesurrender" method="post" action="" onsubmit="return false;">
@@ -1288,7 +1288,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                             </form></td>
                                         </tr>
                                       </table>
-                                      <? } else { echo("You are not authorised to give the registration"); } ?>
+                                      <?php } else { echo("You are not authorised to give the registration"); } ?>
                                     </div>
                                     <!-- end -->
                                     <div id="transferscratchcarddiv" style="overflow:auto; height:auto; width:704px; padding:2px; display:none;" align="center">
@@ -1313,7 +1313,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                   <td width="40%" valign="top"><label></label>
                                                     <select name="ttdealerto" class="swiftselect-mandatory" id="ttdealerto" style="width:180px;"  disabled="disabled">
                                                       <option value="">Make A Selection</option>
-                                                      <? 
+                                                      <?php 
 											include('../inc/firstdealer.php');
 											?>
                                                     </select>
@@ -1325,7 +1325,7 @@ left join inv_mas_state on inv_mas_state.statecode = inv_mas_district.statecode 
                                                   <td valign="top"><input type="checkbox" name="ttproductcheck" id="ttproductcheck"  onclick="document.getElementById('ttproductto').disabled = false"  /></td>
                                                   <td valign="top"><select name="ttproductto" class="swiftselect-mandatory" id="ttproductto" style="width:180px;" disabled="disabled">
                                                       <option value="">Make A Selection</option>
-                                                      <? 
+                                                      <?php 
 											include('../inc/firstproduct.php');
 											?>
                                                     </select>
