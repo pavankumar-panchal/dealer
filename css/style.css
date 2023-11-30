@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	color:#666666;
+	margin-left:0;
+	margin-top:0;
+    background:#FFFFFF;
+}
+.table-border
+{
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #AACBFF;
+	-moz-border-radius: 4px 4px 4px 4px;
+	Z-INDEX: 10;
+	BACKGROUND: #F7FAFF;
+}
+.content-table-border 
+{
+	text-decoration: none;
+	margin: 0 0 0 0;
+	border: 1px solid #D7E7FF;
+	background: #FFFFFF;
+	-moz-border-radius: 4px 4px 4px 4px;
+	COLOR: #61718C;
+	WIDTH: 100%;
+}
+.content-box
+{
+	background:#FFFFFF;
+	padding:5px;
+}
+.header-line
+{
+	background:url(../images/table-header-bg.gif) repeat-x;
+	height:23px;
+	color:#FFFFFF;
+	padding-top:3px;
+	font-size:12px;
+}
+.content-header
+{
+	color:#333333;
+	padding-left:4px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.swiftchoicebutton
+{
+	BORDER: solid 0 #FFFFFF; BACKGROUND: URL(../images/bluebuttonbg.gif) no-repeat; HEIGHT: 21px; WIDTH: 85px; COLOR: #000000; FONT-FAMILY: Verdana, Tahoma; FONT-SIZE: 11px; MARGIN: 0px; padding-top: 3px; padding-bottom: 15px; vertical-align:middle;
+	cursor:pointer;
+}
+.swifttextarea
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Tahoma;
+	FONT-SIZE: 11px;
+	BORDER: 1px SOLID #666666;
+	padding: 2px 2px 2px 2px;
+	vertical-align: middle;
+}
+
+.swifttext-mandatory
+{
+	BACKGROUND-COLOR:#F0F0F0;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Tahoma;
+	FONT-SIZE: 11px;
+	BORDER: 1px SOLID #666666;
+	PADDING: 2px 2px 2px 2px;
+	MARGIN: 0px;
+	vertical-align: middle;
+}
+.swifttext
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Tahoma;
+	FONT-SIZE: 11px;
+	BORDER: 1px SOLID #666666;
+	PADDING: 2px 2px 2px 2px;
+	MARGIN: 0px;
+	vertical-align: middle;
+}
+.swiftselect
+{
+	BORDER: 1px SOLID #4C77B6;
+	BACKGROUND-COLOR: #FFFFFF;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Tahoma;
+	FONT-SIZE: 11px;
+	BORDER: 1px SOLID #666666;
+	margin: 0px;
+	padding: 1px;
+	vertical-align: middle;
+	Z-INDEX: 11;
+}
+
+.swiftchoicebuttondisabled
+{
+	BORDER: solid 0 #FFFFFF; BACKGROUND: URL(../images/greybuttonbg.gif) no-repeat; HEIGHT: 21px; WIDTH: 85px; COLOR: #cccccc; FONT-FAMILY: Verdana, Tahoma; FONT-SIZE: 11px; MARGIN: 0px; padding-top: 3px; padding-bottom: 15px; vertical-align:middle;
+}
+
+.swiftfieldset { margin-bottom: 6px; color: #196088; BORDER: 1px SOLID #CCCCCC; -moz-border-radius: 4px 4px 4px 4px; padding: 4px}
+.swiftfieldset, .swiftfieldset td, .swiftfieldset p, .swiftfieldset li { FONT: 11px Verdana, Tahoma; }
+
+.contbox-top 
+{
+	background:url(../images/imax-dashboard-cont-curve2-top.gif) no-repeat top;
+	height:11px;
+}
+.contbox-mid 
+{
+	background: url(../images/imax-dashboard-cont-curve2-mid.gif) repeat-y top;
+	padding:2px 10px 2px 10px
+}
+.contbox-btm 
+{
+	background:url(../images/imax-dashboard-cont-curve2-btm.gif) no-repeat top;
+	height:18px;
+}
+
