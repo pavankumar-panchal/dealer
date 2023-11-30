@@ -1,0 +1,25 @@
+Date: ##DATE##
+ 
+
+ 
+                                                                                      Sub: Online Payment request
+ 
+Dear Customer,
+[##COMPANY##]
+ 
+You have a payment request raised Online for Relyon. The details are as under:
+
+##TABLE##
+ 
+To make the payment, please login to Relyon Customer Area, with your customer ID.
+
+Please visit www.relyonsoft.com/customer.
+ 
+In case of any queries, please feel free to contact us at support@relyonsoft.com
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+
+ 
+                                                                              This email is a system generated message. Please do not reply to this message(DM).

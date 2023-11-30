@@ -1,0 +1,26 @@
+Date: ##DATE##
+ 
+                                                                                       Sub: ##SUBJECT##
+  
+Dear ##NAME##,
+																					  
+ 
+A complimentary copy PIN has been downloaded from your login with below details.
+  
+  
+Purchase Type: Saral Accounts v5
+Usage Type: NEW
+Purchase Type: Single User
+Scheme: Complimentary copy
+Pin Serial: ##CARDID##
+PIN Number: ##PINNO##
+Customer ID: ##CUSTOMERID##
+Remarks: ##REMARKS##
+
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+
+ 
+                                                                             This email is a system generated message. Please do not reply to this message (DM).

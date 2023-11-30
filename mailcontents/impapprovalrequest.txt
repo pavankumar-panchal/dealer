@@ -1,0 +1,19 @@
+Date: ##DATE##
+ 
+To: 
+Raghavendra N (SPP)
+  
+                					Sub: Implementation Request (Beta)
+				                                                              
+Dear Sir,
+   
+The Implementation Request for the Invoice No (##INVOICENO##) which belongs to the Customer ##BUSINESSNAME## has been requested by the ##SALESNAME##.
+ 
+In case of any support required, please contact 1860-425-5570 or write at support@relyonsoft.com. 
+
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                           This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

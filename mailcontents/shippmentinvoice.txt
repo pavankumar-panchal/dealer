@@ -1,0 +1,20 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE## 
+  
+                					Sub: Shippment Information (Invoice) (Beta)
+				                                                              
+Dear ##NAME##,
+   
+A Shipment has happened to you for ##INVOICENO## with Below Details: 
+
+Shipment Invoice Remarks : ##REMARKS##
+
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                           This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

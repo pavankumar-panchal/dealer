@@ -1,0 +1,29 @@
+
+ 
+Customer ID: ##CUSTOMERID##
+ 
+                                                                                                      Sub: PIN Number ##PINNUMBER## Forcefully Surrendered.
+																									      
+Dear Sir/Madam,
+ 
+PIN Number ##PINNUMBER## forcefully Surrendered on ##DATE##.
+ 
+2013-14 PIN Number information:
+  
+The information is as below:
+ 
+Product Name: ##PRODUCTNAME##
+PIN No: ##PINNUMBER##
+(Serial No: ##CARDID##)
+Customer Name: ##COMPANY##
+Representative: ##DEALERNAME##
+ 
+NOTE: Total count of Forcefully Surrendered is ##FCOUNT## . 
+NOW Customer can use the same Pin Number ##PINNUMBER##. for Registration.
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                                                                             This email is a system generated message(##DLRMAIL##). Please do not reply to this message(UM).

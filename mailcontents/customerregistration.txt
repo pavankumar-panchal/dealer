@@ -1,0 +1,33 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE##
+ 
+Customer ID: ##CUSTOMERID##
+ 
+                                                                                                      Sub: New registration availed for ##PRODUCTNAME##
+
+Dear ##NAME##,
+ 
+We are happy to have you registered for ##PRODUCTNAME##. A registration has been generated for your system with following information.
+ 
+ 
+Registration Information
+ 
+Product Name: ##PRODUCTNAME##
+Scratch Card No: ##SCRATCHCARDNO##
+Computer ID: ##COMPUTERID##
+Soft Key: ##SOFTKEY##
+ 
+ 
+To register the software, please open the REGISTRATION window and enter this information. Once registered, a License file will be generated and saved in your system. Please preserve the license file for future reference (including formatting your system, etc).
+ 
+In case of any queries, please feel free to contact us at support@relyonsoft.com.
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                                                                             This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

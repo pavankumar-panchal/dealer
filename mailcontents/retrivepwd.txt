@@ -1,0 +1,23 @@
+
+Date: ##DATE##
+ 
+									Sub: Password Retrival | Relyon Dealer Login Area
+ 
+ 
+Dear ##CONTACTPERSON##,
+ 
+This is with reference to a request placed at "Relyon Dealer Login Area" for 'Password Retrival'.With reference to the same, below is the URL to reset your login password. [Username: ##USERNAME##] 
+ 
+Url: ##URL##
+ 
+Website: imax.relyonsoft.net/dealer
+
+Note that, this URL expires after 48 hours from your request time.
+ 
+In case of any queries, please feel free to contact us.
+ 
+Regards,
+
+Relyon Web Management
+www.relyonsoft.com	
+				This email is a system generated message. Please do not reply to this message(DM).

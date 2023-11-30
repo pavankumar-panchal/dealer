@@ -1,0 +1,26 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANY##
+##PLACE##
+ 
+Purchase Reference No: ##BILLNO##
+ 
+                                                                                      Sub: Purchase of Relyon Products and respective card details
+ 
+Dear ##NAME##,
+ 
+A product purchase has been executed for you in our system with below details. An invoice would be processed shortly and handed over to you by mail/email.
+
+##TABLE##
+ 
+Thereby, your credit has got reduced by Rs. ##AMOUNT## on ##DATE##. This brings with your total credit available in our system to Rs. ##TOTALCREDIT##.
+ 
+In case of any queries, please feel free to contact us at dealers@relyonsoft.com.
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+
+ 
+                                                                              This email is a system generated message. Please do not reply to this message(DM).

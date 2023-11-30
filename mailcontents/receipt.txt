@@ -1,0 +1,22 @@
+Date: ##DATE##
+ 
+To: 
+##COMPANYNAME##
+##PLACE##
+  
+                					Sub: Payment Receipt against Invoice | ##INVOICENO##
+				                                                              
+Dear ##CONTACTPERSON##,
+   
+Please find the attached Invoice for Rs. ##AMOUNT##. 
+ 
+
+ 
+In case of any support required, please contact 1860-425-5570 or write at support@relyonsoft.com. Also, please register your software through www.relyonsoft.com. 
+  
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+ 
+                           This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

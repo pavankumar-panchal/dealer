@@ -1,0 +1,31 @@
+Date: ##DATE##
+ 
+Hi,
+ 
+                                                                                      Sub: Purchase of Relyon Products
+																					  
+ 
+An invoice has been raised by "##SALESPERSON##" (Sales person: ##SALESPERSON##). The details are as below
+ 
+Invoice Summary
+ 
+Invoice No: ##INVOICENO##
+Date: ##DATE##
+Customer: ##COMPANYNAME##
+Sales Person: ##SALESPERSON##
+Sale Value: ##SALEVALUE##
+Tax: ##TAX##
+Total Amount: ##TOTALAMOUNT##
+
+Product Summary
+ 
+##TABLE##
+ 
+
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+
+ 
+                                                                              This email is a system generated message(##EMAILID##). Please do not reply to this message(DM).

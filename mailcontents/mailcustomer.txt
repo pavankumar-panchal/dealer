@@ -1,0 +1,71 @@
+Date: ##DATE##
+ 
+To: 
+##CUSTOMERID##
+##COMPANY##
+##PLACE##
+  
+											Sub: Relyon Online Invoice | ##INVOICENO##
+  
+                                                                              
+Dear ##NAME##,
+   
+Please find the attached Invoice for ##AMOUNT##.  
+
+We are proud to have your name in our customer encyclopedia. In case of any discrepancies in the Invoice, please reply to us immediately.
+
+ 
+
+Payment Modes:
+
+Payment should be made only by any of below modes 
+
+1.      Cheque or Demand Draft in favour of Relyon Softech Ltd.
+
+2.      Online Transfer to Relyon Bank Account.
+
+3.      Credit/Debit card transacted at www.relyonsoft.com (Customer Login)
+
+ 
+
+Cash payments:
+
+Note that, CASH payments are not acceptable. In case, you have made cash payment, you should be receiving a RECEIPT from Relyon (through email/hardcopy) within 2 working days. If not, Please intimate us.
+
+ 
+
+Relyon will not be responsible for future product maintenance, support or any kind of problems arising thereof, in case, above steps are not ensured.
+
+ 
+
+Support and Maintenance
+
+We understand our responsibility of ensuring return on your investment which you have made on our software. However ensuring this wont be practical without your cooperation. Relyon desires customers to ensure below steps to have better productivity of the software.
+
+ 
+
+1.      While making the payment for NEW purchase, please ensure that, the Installation has been made properly and software is functioning. Also ensure that, you have been demonstrated / explained / trained with basic operations of the software. Relyon will not be providing any additional onsite support after the initial installation and training, free of cost.
+
+2.      If you want any additional support after the initial installation and training, you can obtain by dialing phone: 1860-425-5570 or by writing to support@relyonsoft.com. Online support will be provided for any current users free of cost for one Financial Year by Relyon.
+
+3.      In an exceptional case, if you expect any onsite support (visit to your place) to be given, such visits will be made by Relyon at and additional cost (at predefined rate /actual).  To obtain such service, you have to place the request by writing to support@relyonsoft.com. For Saral PayPack product, you can also visit www.saralpaypack.com and submit an Onsite Support Request form.
+
+4.      Onsite support, requested over telephone or personally will not be entertained, and will be assumed as invalid.
+
+5.      Charges for Onsite support charges should be made immediately (on the same day of visit). 
+
+ 
+
+We are confident that ensuring above steps at your end will empower us to serve you better.  We look forward to have good association.
+ 
+ 
+For registration of Relyon software products, please visit www.relyonsoft.com. Assuring you the best of our services
+ 
+ 
+ 
+Regards,
+ 
+Relyon Softech Ltd, Bangalore
+ 
+			This email is a system generated message(##EMAILID##). Please do not reply to this message(CM).
+ 
