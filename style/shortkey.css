@@ -1,0 +1,54 @@
+@charset "utf-8";
+div.wa {
+    font-family: arial,sans-serif;
+    font-weight: bold;
+	font-size:12px;
+}
+.wa {
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.85;
+}
+div.wc {
+    padding: 1em;
+}
+.Wc {
+    background: none repeat scroll 0 0 #D6E9F8;
+    height: 100%;
+    padding: 3px 0 3px 8px;
+}
+Dp {
+    padding-bottom: 0.8ex;
+}
+.wk {
+    font-size:14px;
+    text-align: left;
+    white-space: nowrap;
+}
+.wj {
+    color: #DDDD00;
+    text-align: right;
+}
+.cf {
+    border-collapse: collapse;
+}
+.Dn {
+    padding-top: 0.15em;
+    vertical-align: top;
+}
+.Do {
+    color:#FF0000;
+    padding-top: 0.8em;
+	font-weight:bold;
+    text-align:left;
+}
+.Wg {
+    background: none repeat scroll 0 0 #D6E9F8;
+    border-bottom: 1px solid #C0D1DF;
+    position: relative;
+	 color: #000000;
+}
+table.wd td.we {
+    font-weight: normal;
+    text-align: left;
+}
+

@@ -1,0 +1,30 @@
+.loadlist 
+{
+	/*position:absolute;
+	position:fixed;*/
+	text-indent:5px;
+	background-color: #FFFFFF;
+	text-align: left;
+	margin-top:2px;
+	margin-bottom:5px;
+	border-top: solid 1px #FFFFFF;
+	border-right: solid 1px #A7A7A7;
+	border-left: solid 1px #A7A7A7;
+	border-bottom: solid 1px #A7A7A7;
+	font-size: 12;
+	COLOR: #000000;#2A54CE;
+	font-family: Arial;
+	/*width: 393px;*/
+	font-weight: normal;
+	visibility:hidden;
+}
+.resultOver
+{
+	background-color: #BBBBFF ;
+}
+.resultOut
+{
+	background-color: #FFFFFF;
+}
+
+
